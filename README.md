@@ -1,2 +1,4 @@
 # personalProjects
- Projetos web para praticar
+ Web projects to practice HTML, CSS and JavaScript.
+
+ 

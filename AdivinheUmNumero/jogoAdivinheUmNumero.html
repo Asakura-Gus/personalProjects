@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo adivinhe o número</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Adivinhe o número</h1>
+        <hr>
+        <p>Escolhemos um número de 1 a 100. Tente adivinhá-lo em até 10 tentativas. A única dica que daremos é se seu palpite foi maior ou menor que o número escolhido. (Desafie-se, tente acertar em até 5 tentativas)</p>
+        <label for="palpite">Seu palpite: </label>
+        <input type="number" name="palpite" id="palpite" autofocus min="1" max="100">
+        <button class="enviarPalpite">Enviar palpite</button>
+        <p class="palpitesAnteriores"></p>
+        <div class="resultado">
+            <p class="resultadoFinal"></p>
+            <p class="baixoOuAlto"></p>
+        </div>
+    </div>
+</body>
+</html>
