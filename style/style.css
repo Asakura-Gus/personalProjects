@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Rampart+One&display=swap');
+
+:root {
+    /*base color*/
+    --base: #4b0082;
+    /*main colors and shades*/
+    --color1: #AD7ECF;
+    --color2: #6F329C;
+    --color3: #7800CF;
+    --color4: #340059;
+
+    /*complementary colors*/
+    --complementary1: #CFAF15;
+    --complementary2: #826D07;
+    --complementary3: #37CF15;
+    --complementary4: #1D8207;
+    /* extra color */
+    --extraColor: #078280;
+    /* Font title */
+    --fontTitle1: 'Rampart One', cursive;
+    --fontTitle2: 'Londrina Shadow', cursive;
+ 
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: var(--color4);
+}
+header {
+    background-color: var(--base);
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: var(--complementary1);
+    text-shadow: 2px 2px 3px black;
+}
+header > h1 + p {
+    padding: 10px;
+}
+header h1 {
+    font-family: var(--fontTitle1);
+    font-size: 3em;
+}
+header p {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+}
+main {
+    background-color: var(--color1);
+    color: var(--color4);
+    padding: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 3px 6px #00000080;
+}
+main h2 {
+    border-left: solid 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+main p {
+    text-indent: 1em;
+    line-height: 3em;
+}
+ul {
+    list-style-position: inside;
+    text-indent: 1em;
+}
+a {
+    text-decoration: none;
+    color: var(--complementary3);
+    font-weight: bold;
+    background-color: var(--base);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px black;
+}
+a:hover {
+    color: var(--complementary4);
+    background-color: var(--color3);
+}
+a:active{
+    box-shadow: 1px 1px 4px black;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
