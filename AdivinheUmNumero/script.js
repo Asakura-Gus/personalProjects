@@ -15,14 +15,18 @@ let palpite = document.querySelector('#palpite');
         }
         palpitesAnteriores.textContent += `${palpiteUsuario} `
         if(palpiteUsuario === numeroAleatorio) {
-            resultadoFinal.textContent='Parabéns! Você acertou.'
+            resultadoFinal.textContent='Parabéns! Você acertou. 😲'
             resultado.style.background='darkgreen';
+            resultado.style.fontWeight='bolder';
+            resultado.style.fontSize='2em';
             resultadoFinal.style.background='inherit';
             baixoOuAlto.textContent='';
             fimDeJogo();
         } else if(contador === 10) {
-            resultadoFinal.textContent='Que pena! Você perdeu.';
+            resultadoFinal.textContent='Que pena! Você perdeu. 😟';
             resultado.style.background='red';
+            resultado.style.fontWeight='bolder';
+            resultado.style.fontSize='2em';
             resultadoFinal.style.background='inherit';
             baixoOuAlto.textContent='';
             fimDeJogo();
@@ -62,6 +66,7 @@ let palpite = document.querySelector('#palpite');
         palpite.disabled = false;
         enviarPalpite.disabled = false;
         resultado.style.background='inherit';
+        resultado.style.fontSize='1em';
         palpite.value='';
         palpite.focus();
         numeroAleatorio = Math.floor(Math.random() * 100) + 1;

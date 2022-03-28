@@ -35,7 +35,7 @@ button {
     color: black;
     box-shadow: 3px 3px 5px black;
     cursor: pointer;
-    margin: 0px 10px;
+    margin-left: 10px;
 }
 button:hover {
     background-color: rgb(108, 134, 143);
@@ -54,5 +54,5 @@ button:active {
 }
 #palpite {
     margin: 0px 10px;
-    width: 30px;
+    width: 40px;
 }
