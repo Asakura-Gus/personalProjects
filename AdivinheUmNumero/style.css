@@ -6,6 +6,8 @@ body {
     font: normal 1em sans-serif;
 }
 .container {
+    text-align: justify;
+    line-height: 2em;
     min-width: 300px;
     max-width: 800px;
     width: 50%;
@@ -52,4 +54,5 @@ button:active {
 }
 #palpite {
     margin: 0px 10px;
+    width: 30px;
 }
